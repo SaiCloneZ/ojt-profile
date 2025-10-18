@@ -1,0 +1,302 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="Images/Logo_2-removebg-preview.png">
+
+<title>Website Profile</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+<div class="container hero-inner">
+<div class="intro">
+<h1 class="name">Hi, I'm Cyryll Jade!</h1>
+<p class="tagline">Tech enthusiast • Beginner Web developer • Beginner Video Editor </p>
+<nav class="hero-cta">
+<a href="#projects" class="btn">View Projects</a>
+<a href="#contact" class="btn ghost">Contact</a>
+</nav>
+</div>
+<div class="profile-card">
+<img src="Images/profile/IdPic.jpg" alt="profile picture" class="avatar">
+<ul class="quick-stats">
+<!--<li><strong>5+</strong><span>Years</span></li>
+<li><strong>20+</strong><span>Projects</span></li>
+<li><strong>Certs</strong><span>3</span></li>-->
+</ul>
+</div>
+</div>
+</header>
+
+
+<main class="container">
+<section id="about" class="card section">
+<h2>About Me</h2>
+<p class="lead">I’m someone who enjoys being creative and exploring different areas of tech and media. I like video editing and photo editing, where I can express ideas visually. I’ve also been learning web development, building up my skills step by step.
+
+I enjoy playing games, and during college, I even had the chance to create some with my group mates for our game development subject. Those projects gave me hands-on experience with teamwork and creativity in building something fun and interactive.
+
+Aside from that, I also know some hardware-related tasks like building PCs, cleaning, formatting, and basic troubleshooting—though I’m still at a beginner level in this area.
+
+Right now, I’m focused on learning, improving, and creating—whether it’s editing, coding, hardware, or making games.
+</p>
+<ul class="meta-list">
+<li><strong>Location:</strong> Metro Manila, Philippines</li>
+<li><strong>Focus:</strong> Creative Media, Frontend Development (Learning), Game Development, Basic Hardware Skills</li>
+<li><strong>Contact:</strong> cyryllracho@gmail.com</li>
+</ul>
+</section>
+
+
+<!--<section id="achievements" class="card section">
+<h2>Achievements</h2>
+<div class="grid cards">
+<article class="mini-card">
+<h3>Google UX Challenge</h3>
+<p class="muted">Winner — UX Prototype & Research</p>
+<p class="date">June 2024</p>
+</article>
+<article class="mini-card">
+<h3>Certified Web Developer</h3>
+<p class="muted">FreeCodeCamp — Responsive Dev</p>
+<p class="date">Dec 2023</p>
+</article>
+<article class="mini-card">
+<h3>Hackathon Finalist</h3>
+<p class="muted">Smart City Challenge</p>
+<p class="date">Mar 2022</p>
+</article>
+</div>
+</section>-->
+
+
+<!-- <section id="projects" class="card section">
+<h2>Projects</h2>
+<div class="grid projects">
+<article class="project">
+<h3><a href="#">Guardian Siege</a></h3>
+<p class="muted">Turn based table top Game</p>
+<p>“A strategy-based tabletop card game where players place, swap, and uncover cards on different boards to outsmart opponents and achieve objectives.”</p>
+</article>
+
+
+<article class="project">
+<h3><a href="#">Portfolio Website</a></h3>
+<p class="muted">Technologies: HTML • CSS • Vanilla JS</p>
+<p>Responsive personal site with smooth animations and project showcases.</p>
+</article>
+
+
+<article class="project">
+<h3><a href="#">Contrita Pax</a></h3>
+<p class="muted">TTRPG</p>
+<p>Shift scheduling app with availability management and calendar integration.</p>
+</article>
+</div>
+
+
+Carousel for project images 1234123
+<div class="carousel-container">
+<div class="carousel">
+<div class="carousel-track">
+<img src="Images/for carousel/GS.jpg" alt="Project 1">
+<img src="https://via.placeholder.com/600x300/6f6fff/031124?text=Project+2" alt="Project 2">
+<img src="https://via.placeholder.com/600x300/00ffaa/031124?text=Project+3" alt="Project 3">
+</div>
+</div>
+<button class="carousel-btn prev">‹</button>
+<button class="carousel-btn next">›</button>
+</div>
+</section>-->
+
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <!-- Project Links -->
+    <div class="project-links">
+      <button class="project-btn" onclick="scrollToCarousel('Siege')">Guardian Siege</button>
+      <button class="project-btn" onclick="scrollToCarousel('pax')">Contrita Pax: TTRPG</button>
+      <button class="project-btn" onclick="scrollToCarousel('MM')">Multimedia Project/s</button>
+    </div>
+
+    <!-- GS Project Carousel -->
+    <div id="Siege" class="carousel-section">
+      <h3>Guardian Siege</h3>
+      <div class="carousel">
+        <div class="slides">
+          <img src="Images/for carousel/GS.jpg" class="active" alt="Gs1">
+          <img src="Images/for carousel/GS PINS.jpg" alt="Gs2">
+          <img src="Images/for carousel/GSGC25.png" alt="Gs3">
+        </div>
+
+        <!-- Prev/Next Buttons -->
+        <button class="prev" onclick="changeSlide('Siege', -1)">&#10094;</button>
+        <button class="next" onclick="changeSlide('Siege', 1)">&#10095;</button>
+
+       
+      </div>
+       <div class="pagination">
+          <span class="dot active" onclick="showSlide(this, 0, 's')"></span>
+          <span class="dot" onclick="showSlide(this, 1, 'Siege')"></span>
+          <span class="dot" onclick="showSlide(this, 2, 'Siege')"></span>
+        </div>
+    </div>
+
+    <!-- CON PAX Carousel -->
+    <div id="pax" class="carousel-section">
+      <h3>Contrita Pax: A TTRPG game</h3>
+      <div class="carousel">
+        <div class="slides">
+          <img src="Images/for carousel/1 - FRONT COVER.png" class="active" alt="PAX1">
+          <img src="Images/for carousel/10.png" alt="PAX 2">
+          <img src="Images/for carousel/31.png" alt="PAX 3">
+          <img src="Images/for carousel/32.png" alt="PAX 4">
+          <img src="Images/for carousel/100.png" alt="PAX 5">
+          <img src="Images/for carousel/101.png" alt="PAX 6">
+          <img src="Images/for carousel/110.png" alt="PAX 7">
+        </div>
+
+        <!-- Prev/Next Buttons -->
+        <button class="prev" onclick="changeSlide('pax', -1)">&#10094;</button>
+        <button class="next" onclick="changeSlide('pax', 1)">&#10095;</button>
+
+        
+      </div>
+      <div class="pagination">
+          <span class="dot active" onclick="showSlide(this, 0, 'pax')"></span>
+          <span class="dot" onclick="showSlide(this, 1, 'pax')"></span>
+          <span class="dot" onclick="showSlide(this, 2, 'pax')"></span>
+          <span class="dot" onclick="showSlide(this, 3, 'pax')"></span>
+           <span class="dot" onclick="showSlide(this, 4, 'pax')"></span>
+          <span class="dot" onclick="showSlide(this, 5, 'pax')"></span>
+          <span class="dot" onclick="showSlide(this, 6, 'pax')"></span>
+        </div>
+    </div>
+    <!-- Multimedia Project Carousel -->
+    <div id="Multimedia" class="carousel-section">
+      <h3>Multimedia Project/s</h3>
+      <div class="carousel">
+        <div class="slides">
+          <img src="Images/for carousel/toph beifong.png" class="active" alt="Gs1">
+        </div>
+
+        <!-- Prev/Next Buttons 
+        <button class="prev" onclick="changeSlide('MM', -1)">&#10094;</button>
+        <button class="next" onclick="changeSlide('MM', 1)">&#10095;</button>-->
+  </div>
+</section>
+
+<!-- Scripts -->
+<script>
+  // Smooth scroll
+  function scrollToCarousel(id) {
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+
+  // Manual Carousel Functions
+  function showSlide(dot, index, sectionId) {
+    const section = document.getElementById(sectionId);
+    const slides = section.querySelectorAll('.slides img');
+    const dots = section.querySelectorAll('.dot');
+
+    slides.forEach(img => img.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    section.dataset.current = index;
+  }
+
+  function changeSlide(sectionId, step) {
+    const section = document.getElementById(sectionId);
+    const slides = section.querySelectorAll('.slides img');
+    const dots = section.querySelectorAll('.dot');
+    let current = parseInt(section.dataset.current || 0);
+
+    current += step;
+    if (current >= slides.length) current = 0;
+    if (current < 0) current = slides.length - 1;
+
+    slides.forEach(img => img.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    section.dataset.current = current;
+  }
+</script>
+
+
+</main>
+
+
+<!-- Contact section moved to the bottom -->
+<section id="contact" class="card section contact">
+<div class="container">
+<h2>Contact</h2>
+<p class="lead">Want to collaborate or say hi? Reach out!</p>
+<ul class="contact-list">
+<li><strong>Email:</strong> <a href="mailto:cyryllracho@gmail.com">cyryllracho@gmail.com</a></li>
+<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cyryll-jade-racho-884839317/">https://www.linkedin.com/in/cyryll-jade-racho</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/SaiCloneZ">https://github.com/SaiCloneZ</a></li>
+</ul>
+</div>
+</section>
+
+
+<!--<footer class="footer">
+<div class="container">
+<p>Built with ❤️ • Do </p>
+</div>
+</footer>-->
+
+
+<!-- Scroll to top button -->
+<button id="scrollTopBtn" title="Go to top">↑</button>
+
+
+<script>
+// Scroll to top button behavior
+const scrollBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function(){
+if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+scrollBtn.style.display = "block";
+} else {
+scrollBtn.style.display = "none";
+}
+};
+scrollBtn.onclick = function(){
+window.scrollTo({top:0, behavior:'smooth'});
+};
+
+
+// Carousel functionality
+const track = document.querySelector('.carousel-track');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+let index = 0;
+
+
+function showSlide(i){
+const slides = track.children.length;
+index = (i + slides) % slides;
+track.style.transform = `translateX(${-index * 100}%)`;
+}
+
+
+prevBtn.addEventListener('click', ()=>showSlide(index-1));
+nextBtn.addEventListener('click', ()=>showSlide(index+1));
+</script>
+
+
+</body>
+</html>
